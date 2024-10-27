@@ -1,0 +1,34 @@
+#resultado {
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+}
+#resultado td, #resultado th {
+    font-size: 12px;
+    border: none;
+    padding: 10px 15px;
+}
+
+#resultado th{
+    border-bottom: 1px solid silver;
+}
+
+#resultado th {
+    text-align: center;
+    background-color: rgb(230, 50, 68);
+    color: #ffffff;
+    font-size: 16px;
+}
+#resultado tr.renglon1 td {
+    background-color: rgb(101, 118, 180, 0.2);
+}
+#resultado tr.renglon2 td {
+    background-color: rgb(230, 50, 68, 0.2);
+}
+
+#resultado tr.renglon1:hover {
+    background-color: rgb(101, 118, 180, 0.6);
+}
+#resultado tr.renglon2:hover {
+    background-color: rgb(230, 50, 68, 0.6);
+}

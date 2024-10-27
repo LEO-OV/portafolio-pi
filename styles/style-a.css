@@ -1,0 +1,78 @@
+.a-cuerpo{
+    padding-top: 80px;
+}
+.me h1 {
+    font-size: 3rem;
+}
+.me p {
+    font-size: 1.3rem;
+}
+.me{
+    background-color: rgb(230, 50, 68 );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    border-radius: 5px;
+}
+
+/* About */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    gap: 100px;
+    background-color: white;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.info {
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 1em;
+    box-shadow: 1px 1px 5px #555;
+}
+
+.info h2 {
+    font-size: 2rem;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #444444;
+}
+
+.details {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.details li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #444444;
+}
+
+.details li strong {
+    color: #ff6b6b;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="i-styles.css">
+    <script src="scripts.js"></script>
+    <title>Práctica 4</title>
+</head>
+<body>
+    <div class="encabezado">
+        <ul class="menu">
+            <li><a href="../../index.html" ><img src="../../img/hogar.png" alt=""></a></li>
+            <li><a>PRÁCTICAS</a>
+                <ul class="submenu">
+                    <li><a href="../p2/practica2.html">PRÁCTICA 2</a></li>
+                    <li><a href="../p3/practica3.html">PRÁCTICA 3</a></li>
+                    <li><a href="#">PRÁCTICA 4</a></li>
+                    <li><a href="../p5/practica5.html">PRÁCTICA 5</a></li>
+                </ul>
+            </li>
+            <li><a href="../mt/mt.html">MT</a></li>
+            <li><a href="../../about.html">ABOUT</a></li>
+        </ul>
+    </div>
+    
+    <div class="cuerpo">
+        <div class="titulo">
+            <h1>PRÁCTICA 4</h1>
+        </div>
+        <div class="ejercicio">
+            <form class="formulario">
+                    <label for="cal">Calificación:</label>
+                    <input type="number" id="cal">
+                    <div class="ctn-btn">
+                        <div class="btn" onclick="evaluar()">ENVIAR</div>
+                    </div>
+            </form> 
+            <div id="resultado1" class="resultado"></div>
+        </div>
+
+        <div class="ejercicio">
+            <form class="formulario">
+                    <label for="fac">Calcular el factorial:</label>
+                    <input type="number" id="fac">
+                    <div class="ctn-btn">
+                        <div class="btn" onclick="factorial()">ENVIAR</div>
+                    </div>
+            </form> 
+            <div id="resultado2" class="resultado"></div>
+        </div>
+
+        <div class="ejercicio">
+            <form class="formulario">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name"><br>
+
+                    <label for="mail">Correo:</label>
+                    <input type="email" id="mail"><br>
+
+                    <label for="age">Edad</label>
+                    <input type="number" min="0" max="120" id="age"><br>
+                    <br>
+                    <label for="gen">Género: </label>
+                    <br><input type="radio" name="gen" value="Hombre" id="gen">Hombre<br>
+                    <input type="radio" name="gen" value="Mujer" id="gen">Mujer<br><br>
+
+                    <label for="born">Fecha de nacimiento:</label>
+                    <input type="date" id="born"><br>
+
+                    <label for="color">Color favorito: </label>
+                    <input type="color" id="color"><br>
+                    <div class="ctn-btn">
+                        <div class="btn" onclick="formulario()">ENVIAR</div>
+                    </div>
+            </form> 
+            <div id="resultado3" class="resultado"></div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Leonardo Velasco Ojeda - Todos los derechos reservados | <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+    </footer>
+</body>
+</html>

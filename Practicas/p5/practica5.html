@@ -1,0 +1,80 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="i-styles.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Práctica 5</title>
+</head>
+<body>
+    <div class="encabezado">
+        <ul class="menu">
+            <li><a href="../../index.html" ><img src="../../img/hogar.png" alt=""></a></li>
+            <li><a>PRÁCTICAS</a>
+                <ul class="submenu">
+                    <li><a href="../p2/practica2.html">PRÁCTICA 2</a></li>
+                    <li><a href="../p3/practica3.html">PRÁCTICA 3</a></li>
+                    <li><a href="../p4/practica4.html">PRÁCTICA 4</a></li>
+                    <li><a href="#">PRÁCTICA 5</a></li>
+                </ul>
+            </li>
+            <li><a href="../mt/mt.html">MT</a></li>
+            <li><a href="../../about.html">ABOUT</a></li>
+        </ul>
+    </div>
+    <div class="cuerpo">
+        <div class="titulo">
+            <h1>PRÁCTICA 5</h1>
+        </div>
+        <div class="ejercicio">
+            <form class="formulario">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="nombre"  name="nombre" placeholder="Nombre"><br>
+
+                <label for="correo">Correo:</label>
+                <input type="mail" id="correo" name="correo" placeholder="ejemplo@correo.com"><br><br>
+
+                <label for="decide">Decide:</label><br>
+                <input type="checkbox" id="decide" name="decide" value="Si">Si<br>
+                <input type="checkbox" id="decide" name="decide" value="No">No <br>
+                <input type="checkbox" id="decide" name="decide" value="Tal vez">Tal vez<br><br>
+
+                <label for="genero">Genero:</label><br>
+                <input type="radio" id="genero" value="Masculino" name="genero">Masculino<br>
+                <input type="radio" id="genero" value="Femenino" name="genero">Femenino<br>
+                <input type="radio" id="genero" value="Indefinido" name="genero">Indefinido<br><br>
+
+                <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                <input type="datetime-local" id="fecha-nacimiento" name="fecha-nacimiento"><br><br>
+
+                <label for="color">Color favorito:</label>
+                <input type="color" id="color" name="color"><br>
+
+                <label for="estatura">Estatura [cm]:</label>
+                <input type="range" id="estatura" min="140" max="210" step="1" name="estatura"><span id="value">175</span><br>
+                
+                <script>
+                    var slider = document.getElementById("estatura");
+                    var output = document.getElementById("value");
+            
+                    slider.oninput = function() {
+                        output.textContent = this.value;
+                    }
+                </script>
+
+                <div class="ctn-btn">
+                    <div class="btn" onclick="val_field()">ENVIAR</div>
+                </div>
+            </form>
+        </div>
+        <div class="ejercicio">
+            <table id="resultado"></table>
+        </div>
+    </div>    
+    <footer>
+        <p>© 2024 Leonardo Velasco Ojeda - Todos los derechos reservados | <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+    </footer>
+</body>
+</html>

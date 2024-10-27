@@ -1,0 +1,14 @@
+.ejercicio{
+    width: 40%;
+    flex-direction: column;
+}
+.resultado{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 4px rgb(230, 50, 68);
+    margin-top: 5px;
+    border-radius: 1em;
+}

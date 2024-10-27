@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Práctica 6</title>
+</head>
+<body>
+    <div class="encabezado">
+        <!-- <ul class="menu">
+            <li><a href="../../index.html" ><img src="../../img/hogar.png" alt=""></a></li>
+            <li><a>PRÁCTICAS</a>
+                <ul class="submenu">
+                    <li><a href="../p2/practica2.html">PRÁCTICA 2</a></li>
+                    <li><a href="../p3/practica3.html">PRÁCTICA 3</a></li>
+                    <li><a href="../p4/practica4.html">PRÁCTICA 4</a></li>
+                    <li><a href="../p5/practica5.html">PRÁCTICA 5</a></li>
+                    <li><a href="../p6/practica6.html">PRÁCTICA 6</a></li>
+                </ul>
+            </li>
+            <li><a href="../mt/mt.html">MT</a></li>
+            <li><a href="../../about.html">ABOUT</a></li>
+        </ul> -->
+    </div>
+    <div class="cuerpo">
+        <div class="titulo">
+            <h1>PRÁCTICA 6</h1>
+        </div>
+        <div class="ejercicio">
+            <div class="media">
+                <h2>AUDIO</h2>
+                <audio src="../../media/SIN PODERES.mp3" preload="none" controls>
+                    El navegador no es compatible con esta funcionalidad.
+                </audio>
+            </div>
+        </div>
+        <div class="ejercicio">
+            <div class="media">
+                <h2>VÍDEO</h2>
+                <video src="../../media/si preguntas por mi.mp4" height="400px" loop autoplay controls muted>
+                </video>
+            </div>
+        </div>
+        <div class="ejercicio">
+            <div class="media">
+                <h2>YOUTUBE</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9WCbOblB8sI?si=OvjHRCChY9OdVJBx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>     
+            </div>
+        </div>
+        <div class="ejercicio">
+                <div class="media">
+                    <h2>TWITTER</h2>
+                    <blockquote class="twitter-tweet tw-align-center"><p lang="zxx" dir="ltr"><a href="https://t.co/3rp9bd61kX">pic.twitter.com/3rp9bd61kX</a></p>&mdash; Elon Musk (@elonmusk) <a href="https://twitter.com/elonmusk/status/1842730813885948001?ref_src=twsrc%5Etfw">October 6, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+        </div>
+        <div class="ejercicio">
+            <div class="media">
+                <h2>FACEBOOK</h2>
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02ouCs1KV3DYTd3zABiFhwsgE623YBZ84nkTKhRU9SEEU3q43JgVWPKtTe88KKN8BAl%26id%3D61553075018803&show_text=true&width=500" width="80%" height="467" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+        </div>
+        <div class="ejercicio">
+            <div class="media">
+                <h2>GOOGLE MAPS (usando iframe)</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15053.08735113187!2d-99.27737863395029!3d19.40065727121299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d20138891b3483%3A0xfc7f5357ee925110!2sUniversidad%20An%C3%A1huac%20M%C3%A9xico%20Campus%20Norte!5e0!3m2!1ses-419!2smx!4v1728181141785!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="ejercicio"> 
+            <div class="mapa" id="map"></div>
+                <script async
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdDkK1ecFL32nHHSE5DiAac3zRXT7Uizo&loading=async&callback=initMap">
+                </script>
+                <script>
+                    const mapDiv = document.getElementById('map');
+                    let map;
+                    function initMap(){
+                        map = new google.maps.Map(mapDiv, {
+                            center: {lat: 19.400418335495875, lng: -99.26838591875833},
+                            zoom: 15,
+                        });
+                    }
+                </script>
+        </div>
+    </div>    
+    <footer>
+        <p>© 2024 Leonardo Velasco Ojeda - Todos los derechos reservados | <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+a{
+    text-decoration: none;
+    color: rgb(230, 50, 68);
+    opacity: 0.8;
+}
+a:hover{
+    opacity: 1;
+}
+
+table{
+    border: 1px solid silver;
+    color: #444444;
+    text-align: center;
+    border-collapse: collapse;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+tr:nth-child(odd){
+    background-color:  rgb(230, 50, 68, 0.2);
+}
+   
+td{
+    padding: 10px;
+    border-right: 1px solid gray;
+}
+#tabla1 tr.cabeceras td{
+    background-color: rgb(230, 50, 68);
+    border-bottom: 1px solid;
+    color: white;
+}
+.titulo{
+    flex-direction: column;
+}

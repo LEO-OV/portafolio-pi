@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+    <title>Práctica 3 - tabla 1</title>
+    <style>
+        table{
+            border: 2px solid silver;
+            color: #444444;
+            text-align: center;
+            border-collapse: collapse;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+        }
+        td{
+            padding: 10px;
+            border: 1px solid silver;
+        }
+        #tabla1 tr.cabeceras td{
+            color: white;
+            font-weight: bolder;
+            border: 1px solid silver;
+            background-color: #444444;
+        }
+        tr.l1{
+            background-color: rgb(230, 50, 68, 0.5);
+        }
+        tr.l2{
+            background-color: rgba(114, 250, 186, 0.4);
+        }
+        tr.l3{
+            background-color: rgba(114, 121, 250, 0.4);
+        }
+        .titulo{
+            flex-direction: column;
+        }
+        .menu-interno a{
+            color: black;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(230, 50, 68);
+            opacity: 0.8;
+        }
+        a:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="encabezado">
+        <ul class="menu">
+            <li><a href="../../index.html" ><img src="../../img/hogar.png" alt=""></a></li>
+            <li><a>PRÁCTICAS</a>
+                <ul class="submenu">
+                    <li><a href="../p2/practica2.html">PRÁCTICA 2</a></li>
+                    <li><a href="practica3.html">PRÁCTICA 3</a></li>
+                    <li><a href="../p4/practica4.html">PRÁCTICA 4</a></li>
+                    <li><a href="../p5/practica5.html">PRÁCTICA 5</a></li>
+                </ul>
+            </li>
+            <li><a href="../mt/mt.html">MT</a></li>
+            <li><a href="../../about.html">ABOUT</a></li>
+        </ul>
+    </div>
+
+    <div class="cuerpo">
+        <div class="titulo">
+            <h1><a href="practica3.html">PRÁCTICA 3</a></h1>
+            <div class="menu">
+                <ul class="menu-interno">
+                    <li><a href="tabla1.html">TABLA 1</a></li>
+                    <li><a href="tabla2.html">TABLA 2</a></li>
+                    <li><a href="imagenes.html">IMÁGENES</a></li>
+                    <li><a href="https://cinepolis.com/mx" target="_blank">SITIO EXTERNO 1</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank">SITIO EXTERNO 2</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="ejercicio">
+            <table id="tabla1">
+                <tr class="cabeceras">
+                    <td>Lenguajes de programación</td>
+                    <td>Año de creación</td>
+                    <td>Usos comunes</td>
+                    <td>Ventajas</td>
+                </tr>
+                <tr class="l1">
+                    <td>Python</td>
+                    <td>1991</td>
+                    <td>Desarrollo web, ciencia de datos, IA</td>
+                    <td>Sintaxis sencilla, gran comunidad</td>
+                </tr>
+                <tr class="l2">
+                    <td>JavaScript</td>
+                    <td>1995</td>
+                    <td>Desarrollo web, aplicaciones móviles</td>
+                    <td>Interactividad en web, versatilidad</td>
+                </tr>
+                <tr class="l3">
+                    <td>Java</td>
+                    <td>1995</td>
+                    <td>Desarrollo de aplicaciones empresariales, Android</td>
+                    <td>Portabilidad, robustez</td>
+                </tr>
+                <tr class="l1">
+                    <td>C++</td>
+                    <td>1983</td>
+                    <td>Desarrollo de sistemas, videojuegos</td>
+                    <td>Alta ciencia, control de hardware</td>
+                </tr>
+                <tr class="l2">
+                    <td>C#</td>
+                    <td>2000</td>
+                    <td>Desarrollo de aplicaciones de Windos, videojuegos</td>
+                    <td>Integración con .NET, orientación a objetos</td>
+                </tr>
+                <tr class="l3">
+                    <td>Ruby</td>
+                    <td>1995</td>
+                    <td>Desarrollo web (rails)</td>
+                    <td>Sintaxis limpia, fácil de aprender</td>
+                </tr>
+                <tr class="l1">
+                    <td>PHP</td>
+                    <td>1995</td>
+                    <td>Desarrollo de sitios web dinámicos</td>
+                    <td>Amplia documentación, fácil Integración</td>
+                </tr>
+                <tr class="l2">
+                    <td>Swift</td>
+                    <td>2014</td>
+                    <td>Desarrollo de aplicaciones de iOS</td>
+                    <td>Rápido, seguro</td>
+                </tr>
+                <tr class="l3">
+                    <td>R</td>
+                    <td>1993</td>
+                    <td>Análisis estadístico, ciencia de datos</td>
+                    <td>Potente para análisis de datos, gran número de paquetes</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Leonardo Velasco Ojeda - Todos los derechos reservados | <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+    </footer>
+</body>
+</html>
